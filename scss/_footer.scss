@@ -1,0 +1,64 @@
+/*---------------------MEDIASQ-------------------*/
+
+@media only screen and (max-width: 767px){
+    footer{
+        background-color: transparent;
+        height: 9vh;
+        background-image: url(../multimedia/6.jpg);
+        
+            }
+
+            .footer__copyr{
+                font-size: .5rem;
+            }
+}
+
+
+
+@media only screen and (min-width: 768px)and(max-width: 1023px) {
+    footer{
+        background-color: transparent;
+            
+
+            .footer__copyr{
+                font-size: .6rem;
+            }
+        }
+}
+
+
+@media only screen and (min-width: 1024px){
+    footer{
+        background-color: transparent;
+        
+        .footer__copyr{
+            font-size: .9rem;
+        }
+    }
+}
+
+/*---------------------------*/
+
+footer {
+    margin: 0;
+    padding: 0; 
+    // background-image: url(../multimedia/6.jpg);
+
+    // background-color: black;
+   
+
+    .footer__copyr{
+        display: flex;
+        align-items: flex-end;
+        color: white;
+    }
+
+    .footer__redes{
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+}
+  

@@ -1,0 +1,96 @@
+/*---------------------MEDIASQ----------------*/
+
+@media only screen and (max-width: 767px) {
+    #portfolio{
+        width: 100vw;
+        margin-left: 0vw;
+        margin-top: 20vh;
+        margin-bottom: 10vh;
+        margin-right: 0;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+    #portfolio {   
+    margin-left: 16vw;
+    }
+}
+
+/*-----------PORTFOLIO-------------*/
+section {
+    #portfolio{
+        background-color: transparent;
+    }
+
+    .portfolio__titulo{
+        font-size: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        text-shadow: 2px 2px 0 #000; 
+    }
+    
+    .portfolio__item{
+        max-width: 25rem;
+        margin-left: auto;
+        margin-right: auto;
+    
+
+        .portfolio__link{
+            position: relative;
+            display: block;
+            margin: 0 auto;
+        
+
+            img{
+                opacity: 1;
+            }
+        }
+        .portfolio__hover{
+            display: flex;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(248, 242, 222, 0.9);
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity ease-in-out 0.25s;
+        }
+
+            .portfolio__hover__content{
+                font-size: 1.25rem;
+            }
+            .portfolio__link:hover .portfolio__hover{
+                opacity: .6;
+            }
+            
+
+            .portfolio__hover__content__infoModal{
+                color: black;
+            }
+    
+            .portfolio__caption {
+                font-size: 1.5rem;
+                font-weight: 00;
+                padding: 1.5rem;
+                text-align: center;
+                background-color:transparent
+            }
+    }
+   
+
+
+/*------------------------MODAL----------------------------*/
+
+
+
+}
+    
+
+
+
+
