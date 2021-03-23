@@ -1,1 +1,146 @@
- 
+#contacto{
+    height: 100vh;
+    margin-right: 0;
+    padding-right: 0;
+    text-transform: none;
+    background: url(../multimedia/distrib3.jpeg) ;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: top;
+    filter:grayscale(60%);
+    transition: 1.3s;
+    
+}
+#contacto:hover{
+   
+    background: url(../multimedia/distrib3.jpeg) ;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter:grayscale(35%);
+
+}
+
+    .section__titulo--color{
+        color: black;
+        font-size: 2.3rem;
+        padding-top: 2rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        text-align: center;
+        position: relative;
+        text-shadow: 2px 2px 0 rgba(240, 240, 214, 0.904);
+
+    }
+
+    .section__subtitulo--color{
+        font-size:2.1rem;
+        text-align: left;
+        color: #691828;
+        font-weight: 600;
+        margin-bottom: 1.5rem;
+        margin-left: 4%;
+    }
+
+    
+    .formulario{
+        margin-left: 4%;
+        width: 50%;
+
+    }
+
+
+    .form__divinput{
+        border-bottom: 8px solid;
+        border-color: black;
+    }
+
+        .form__divinput__input{
+            background-color: transparent;
+            border:none;
+
+
+        .form__divinput__input:focus{
+            background-color: transparent;
+            color: black;
+            border: 1px solid;
+            border-color: white;
+        }
+    }
+
+
+
+.form__divinput__input::placeholder{
+    color: black;
+}
+
+
+/*------------------ANIMACIONES-----------------------*/
+
+#contacto {
+    animation: fade-distribuidores 1.3s ease-in both;
+  }
+  
+  @keyframes fade-distribuidores {
+    from {
+      opacity: 0;
+      transform: translate3d(0 , 0, -100%);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+
+  /*----------------------MEDIASQ--------------------*/
+
+
+  @media screen and (max-width: 767px){
+    #contacto{
+        width: 100vw;
+        margin-left: 0vw;
+        margin-top: 20vh;
+        margin-bottom: 10vh;
+        margin-right: 0;
+        background-image: url(../multimedia/back-distribuidores.jpg);
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    #contacto:hover{
+   
+        background-image: url(../fotos/IMG_8278.jpg);
+        background-repeat:no-repeat;
+        background-size: cover;
+        filter:grayscale(35%);
+    
+    }
+
+    .formulario{
+        width: 80%;
+    }
+
+    .formulario__boton{
+        align-items: center;    
+    }
+}
+
+
+  @media screen and (min-width: 768px){
+    #contacto{
+        width: 83vw;
+        margin-left: 17vw;
+    }
+
+    
+    .formulario__boton{
+        align-items: left;
+        margin-left: 15%;
+    }
+}
+
+
+
+

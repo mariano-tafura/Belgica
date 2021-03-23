@@ -7,25 +7,27 @@
     <meta name="description" content="waffles Belgica, una opción rica,nutritiva y fácil de preparar">
     <meta name="keywords" content="waffle, avena, chia, banana, coco, cacao, cacao amargo">
 
-
+    <!-----FONT STYLE----->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
     <link href="https://fonts.googleapis.com/css2?family=Economica&display=swap" rel="stylesheet">
 
+    <!-----ICONS----->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+    <!-----BOOTSTRAP----->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    
+
+    <!-----CSS----->
     <link rel="stylesheet" href="css\style.css">
     
-
-
     <title>Waffles Belgica</title>
+
 </head>
 <body>
     
 
-        <!----------NAV-------------->
+    <!----------NAV-------------->
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top col-md-2 col-lg-2" id="sideNav">
         <a class="nav__logo " href="index.html"><img class="nav__imgLogo" src="multimedia/Logo2.png"  alt="logo belgica"></a>
@@ -34,9 +36,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav nav__list">
                 <li class="nav__list__item"><a class="nav__list__item__a" href="sabores.html">sabores</a></li>
-                <li class="nav__list__item"><a class="nav__list__item__a" href="distribuidores.html">distribuidores</a></li>
+                <li class="nav__list__item"><a class="nav__list__item__a" href="preparacion.html">¿Cómo prepararlos?</a></li>
                 <li class="nav__list__item"><a class="nav__list__item__a" href="conocenos.html">conocenos</a></li>
-                <li class="nav__list__item"><a class="nav__list__item__a" href="contacto.html">contactanos</a></li>
+                <li class="nav__list__item"><a class="nav__list__item__a" href="contacto.html">contacto</a></li>
                 
             </ul>
         </div>
@@ -44,213 +46,533 @@
 
 
 
-    <section class="col-10 p-0" id="portfolio">
-        <div class="container portfolio row m-0 p-0">
-            <div class="text-center">
-                <h2 class="section-heading text-uppercase portfolio__titulo mt- p-3">Nuestros Sabores</h2>
+    <!-- =======Portfolio ======= -->
+    <section class="portfolio section-bg">
+        <div class="container">
+  
+          <div class="text-uppercase text-center">
+            <h1 class="portfolio__titulo"><b>nuestros sabores</b></h1>
+          </div>
+  
+          
+          <!----------AVENA------------->
+          <div class="row portfolio-container">
+  
+            <div class="col-lg-4 col-md-6 portfolio-item ">
+              <div class="container__inf portfolio-wrap portfolio-wrap--border">
+                <img src="multimedia\prod-cacao-banana3.jpeg" class="img-fluid" alt="waffle de avena">
+                <div class="overlay overlay-heigt">
+                  <div class="table-font">
+                    <header>  
+                      <h1 class="text-center bg-dark">avena</h1>
+                      <p class="text-center a"><b>ingredientes: Agua,Avena,Huevo en polvo,Leche en polvo descremada <br> Stevia,Polvo para hornear,Extracto de vainilla</b></p>
+                      <p class="text-center">
+                        <b>condiciones de almacenamiento y uso: <br>En el freezer hasta 3 meses desde la fecha de elaboracion <br> En refrigerador, ver fecha de vencimiento</b>
+                      </p>
+                    </header>
+                      <table class="table-nutricional">
+
+                        <tbody>
+
+                          <tr>
+                            <th>
+                              valor energetico
+                            </th>
+                            <td>
+                              101,4kcal
+                              &bull;426Kj
+                            </td>
+                            <td>5,1</td>
+                          </tr>
+
+
+                          <tr>
+                            <th>Carbohidratos</th>
+                            <td>14,1gr</td>
+                            <td>4,7</td>
+                          </tr>
+
+
+                          <tr>
+                            <th>proteinas</th>
+                            <td>5,9gr</td>
+                            <td>7,9</td>
+                          </tr>
+
+
+                          <tr>
+                            <th>Grasas totales</th>
+                            <td>2,4gr</td>
+                            <td>4,3</td>
+                          </tr>
+
+
+                          <tr>
+                            <th>grasas Saturadas</th>
+                            <td>0,2gr</td>
+                            <td>1</td>
+                          </tr>
+
+
+                          <tr>
+                            <th>grasas Trans</th>
+                            <td>0gr</td>
+                            <td>0</td>                          
+                          </tr>
+
+                          <tr>
+                            <th>fibra alimentaria</th>
+                            <td>1,8gr</td>
+                            <td>7,3</td>                          
+                          </tr>
+
+                          <tr>
+                            <th>sodio</th>
+                            <td>29,9mg</td>
+                            <td>1,12</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                
+                    
+                  </div>
+              </div>
+              </div>
             </div>
 
 
-                <!-------------------Avena------------------>
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="portfolio__item">
-                        <a class="portfolio__link" data-toggle="modal" href="#portfolioModal1">
-                            <div class="portfolio__hover">
-                                <div class="portfolio__hover__content"><i class="fas fa-plus fa-3x portfolio__hover__content__infoModal"></i></div>
-                            </div>
-                            <img class=" img-fluid portfolio__img" src="multimedia/avena2.jpg" alt="imagen waffle de avena" />
-                        </a>
-                        <div class="portfolio__caption">
-                            <div>avena</div>
-                        </div>
-                    </div>
-                </div>
+            <!----------AVENA&CHIA---------->
+  
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="container__inf portfolio-wrap portfolio-wrap--border">
+                <img src="multimedia\prod-cacao-banana3.jpeg" class="img-fluid" alt="waffle de avena&chia">
+                <div class="overlay overlay-heigt">
+                  <div class="table-font">
+                    <header>  
+                      <h1 class="text-center bg-dark">avena&Chia</h1>
+                      <p class="text-center a"><b>ingredientes: Agua,Avena,Huevo en polvo,Leche en polvo descremada <br> Stevia,Polvo para hornear,Extracto de vainilla</b></p>
+                      <p class="text-center">
+                        <b>condiciones de almacenamiento y uso: <br>En el freezer hasta 3 meses desde la fecha de elaboracion <br> En refrigerador, ver fecha de vencimiento</b>
+                      </p>
+                    </header>
+                      <table class="table-nutricional">
+
+                        <tbody>
+
+                          <tr>
+                            <th>
+                              valor energetico
+                            </th>
+                            <td>
+                              99,91Kcal
+                              &bull;419,63Kj
+                            </td>
+                            <td>5</td>
+                          </tr>
 
 
-                <!-------------------Avena&Chia------------->
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="portfolio__item">
-                        <a class="portfolio__link" data-toggle="modal" href="#portfolioModal2">
-                            <div class="portfolio__hover">
-                                <div class="portfolio__hover__content"><i class="fas fa-plus fa-3x portfolio__hover__content__infoModal"></i></div>
-                            </div>
-                            <img class="img-fluid portfolio__imgChia" src="multimedia/avena&chia2.jpg" alt="imagen waffle Avena&Chia" />
-                        </a>
-                        <div class="portfolio__caption">
-                            <div>avena&Chia</div>
-                        </div>
-                    </div>
-                </div>
+                          <tr>
+                            <th>Carbohidratos</th>
+                            <td>14,19gr</td>
+                            <td>4,7</td>
+                          </tr>
 
 
-                <!--------------------Banana&Avena---------------->
-                <div class="col-lg-4 col-sm-6 mb-4">
-                    <div class="portfolio__item">
-                        <a class="portfolio__link" data-toggle="modal" href="#portfolioModal3">
-                            <div class="portfolio__hover">
-                                <div class="portfolio__hover__content"><i class="fas fa-plus fa-3x portfolio__hover__content__infoModal"></i></div>
-                            </div>
-                            <img class="img-fluid" src="multimedia/Banana&Avena2.jpg" alt="waffle de banana&avena" />
-                        </a>
-                        <div class="portfolio__caption">
-                            <div>banana&Avena</div>
-                        </div>
-                    </div>
-                </div>
+                          <tr>
+                            <th>proteinas</th>
+                            <td>5,07gr</td>
+                            <td>6,8</td>
+                          </tr>
 
-                <!---------------Banana&Coco---------------->
-                <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                    <div class="portfolio__item">
-                        <a class="portfolio__link" data-toggle="modal" href="#portfolioModal4">
-                            <div class="portfolio__hover">
-                                <div class="portfolio__hover__content"><i class="fas fa-plus fa-3x portfolio__hover__content__infoModal"></i></div>
-                            </div>
-                            <img class="img-fluid" src="multimedia/Banana&Coco2.jpg" alt="waffle de banana&coco" />
-                        </a>
-                        <div class="portfolio__caption pb-0 pl-0">
-                            <div>banana&Coco</div>
-                        </div>
-                    </div>
-                </div>
 
-                <!----------------Banana&Cacao------------>
-                <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
-                    <div class="portfolio__item">
-                        <a class="portfolio__link" data-toggle="modal" href="#portfolioModal5">
-                            <div class="portfolio__hover">
-                                <div class="portfolio__hover__content"><i class="fas fa-plus fa-3x portfolio__hover__content__infoModal"></i></div>
-                            </div>
-                            <img class="img-fluid" src="multimedia/Banana&Cacao2.jpg" alt="coco" />
-                        </a>
-                        <div class="portfolio__caption">
-                            <div>banana&Cacao</div>
-                        </div>
-                    </div>
-                </div>
+                          <tr>
+                            <th>Grasas totales</th>
+                            <td>2,54gr</td>
+                            <td>4,6</td>
+                          </tr>
 
-                <!-----------------Cacao Amargo------------->
-                <div class="col-lg-4 col-sm-6 mb-3">
-                    <div class="portfolio__item">
-                        <a class="portfolio__link" data-toggle="modal" href="#portfolioModal6">
-                            <div class="portfolio__hover">
-                                <div class="portfolio__hover__content"><i class="fas fa-plus fa-3x portfolio__hover__content__infoModal"></i></div>
-                            </div>
-                            <img class="img-fluid" src="multimedia/CacaoAmargo2.jpg" alt="" />
-                        </a>
-                        <div class="portfolio__caption">
-                            <div>cacao Amargo</div>
-                        </div>
-                    </div>
-                </div>
+
+                          <tr>
+                            <th>grasas Saturadas</th>
+                            <td>0,28gr</td>
+                            <td>1,3</td>
+                          </tr>
+
+
+                          <tr>
+                            <th>grasas Trans</th>
+                            <td>0gr</td>
+                            <td>0</td>                          
+                          </tr>
+
+                          <tr>
+                            <th>fibra alimentaria</th>
+                            <td>2,55gr</td>
+                            <td>10,2</td>                          
+                          </tr>
+
+                          <tr>
+                            <th>sodio</th>
+                            <td>26,38mg</td>
+                            <td>1,1</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                
+                    
+                  </div>
+              </div>
+              </div>
+            </div>
             
-        </div>
-    </section>
 
 
+            <!-------BANANA------------>
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="container__inf portfolio-wrap portfolio-wrap--border">
+                <img src="multimedia\prod-cacao-banana3.jpeg" alt="waffle cacao&banana" class="img-fluid">
+                <div class="overlay overlay-heigt">
+                    <div class="table-font">
+                        <header>  
+                          <h1 class="text-center bg-dark">banana</h1>
+                          <p class="text-center a"><b>ingredientes: Agua,Avena,Huevo en polvo,Leche en polvo descremada <br> Stevia,Polvo para hornear,Extracto de vainilla</b></p>
+                          <p class="text-center">
+                            <b>condiciones de almacenamiento y uso: <br>En el freezer hasta 3 meses desde la fecha de elaboracion <br> En refrigerador, ver fecha de vencimiento</b>
+                          </p>
+                        </header>
+                        
+                        <table class="table-nutricional">
+                          
+                          <tbody>
 
-    <!-- Portfolio Modals-->
-    <!-- Modal 1-->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body modal-content-body">
-                    <!-- Project Details Go Here-->
-                    <h2 class="text-uppercase text-dark">avena</h2>
-                    <p class="item-intro text-muted">fuente de proteina | Sin adicion de azúcares</p>
-                    <img class="img-fluid d-block mx-auto modal__img" src="multimedia/inf.png" alt="Close modal" /></div>
-                    <button class="btn btn-primary modal__buttom" data-dismiss="modal" type="button" style="background-color: black;">
-                        <i class="fas fa-times mr-1"></i>
-                        cerrar
-                    </button>
+                            <tr>
+                              <th>
+                                valor energetico
+                              </th>
+                              <td>
+                                100,2Kcal
+                                &bull;429,8Kj
+                              </td>
+                              <td>5</td>
+                            </tr>
+  
+  
+                            <tr>
+                              <th>Carbohidratos</th>
+                              <td>15,19gr</td>
+                              <td>5,3</td>
+                            </tr>
+  
+  
+                            <tr>
+                              <th>proteinas</th>
+                              <td>4,9gr</td>
+                              <td>6,5</td>
+                            </tr>
+  
+  
+                            <tr>
+                              <th>Grasas totales</th>
+                              <td>1,9gr</td>
+                              <td>3,5</td>
+                            </tr>
+  
+  
+                            <tr>
+                              <th>grasas Saturadas</th>
+                              <td>0,2gr</td>
+                              <td>1,1</td>
+                            </tr>
+  
+  
+                            <tr>
+                              <th>grasas Trans</th>
+                              <td>0gr</td>
+                              <td>0</td>                          
+                            </tr>
+  
+                            <tr>
+                              <th>fibra alimentaria</th>
+                              <td>2,1gr</td>
+                              <td>8,3</td>                          
+                            </tr>
+  
+                            <tr>
+                              <th>sodio</th>
+                              <td>27,2mg</td>
+                              <td>1,1</td>
+                            </tr>
+  
+                          </tbody>
+                        </table>
+                  
+                      
+                    </div>
                 </div>
+              </div>
             </div>
-        </div>
-    </div>
-    <!-- Modal 2-->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body modal-content-body">
-                    <!-- Project Details Go Here-->
-                    <h2 class="text-uppercase text-dark">avena&Chia</h2>
-                    <p class="item-intro text-muted">fuente de proteina | Sin adicion de azúcares</p>
-                    <img class="img-fluid d-block mx-auto modal__img" src="multimedia/inf.png" alt="Close modal" /></div>
-                    <button class="btn btn-primary modal__buttom" data-dismiss="modal" type="button" style="background-color: black;">
-                        <i class="fas fa-times mr-1"></i>
-                        cerrar
-                    </button>
-                </div>
+  
+
+            <!--------------BANANA&COCO------------>
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="container__inf portfolio-wrap portfolio-wrap--border">
+                <img src="multimedia\prod-cacao-banana3.jpeg" class="img-fluid" alt="waffle de banana&coco">
+                <div class="overlay overlay-heigt">
+                  <div class="table-font">
+                    <header>  
+                      <h1 class="text-center bg-dark">banana&Coco</h1>
+                      <p class="text-center a"><b>ingredientes: Agua,Avena,Huevo en polvo,Leche en polvo descremada <br> Stevia,Polvo para hornear,Extracto de vainilla</b></p>
+                      <p class="text-center">
+                        <b>condiciones de almacenamiento y uso: <br>En el freezer hasta 3 meses desde la fecha de elaboracion <br> En refrigerador, ver fecha de vencimiento</b>
+                      </p>
+                    </header>
+                      <table class="table-nutricional">
+
+                        <tbody>
+
+                          <tr>
+                            <th>
+                              valor energetico
+                            </th>
+                            <td>
+                              95,9Kcal
+                              &bull;4,8Kj
+                            </td>
+                            <td>4,8</td>
+                          </tr>
+
+
+                          <tr>
+                            <th>Carbohidratos</th>
+                            <td>13,4gr</td>
+                            <td>4,5</td>
+                          </tr>
+
+
+                          <tr>
+                            <th>proteinas</th>
+                            <td>5,2gr</td>
+                            <td>6,9</td>
+                          </tr>
+
+
+                          <tr>
+                            <th>Grasas totales</th>
+                            <td>2,4gr</td>
+                            <td>4,3</td>
+                          </tr>
+
+
+                          <tr>
+                            <th>grasas Saturadas</th>
+                            <td>0,2gr</td>
+                            <td>0,9</td>
+                          </tr>
+
+
+                          <tr>
+                            <th>grasas Trans</th>
+                            <td>0gr</td>
+                            <td>0</td>                          
+                          </tr>
+
+                          <tr>
+                            <th>fibra alimentaria</th>
+                            <td>1,9gr</td>
+                            <td>7,5</td>                          
+                          </tr>
+
+                          <tr>
+                            <th>sodio</th>
+                            <td>26,2mg</td>
+                            <td>1,1</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                
+                    
+                  </div>
+              </div>
+              </div>
             </div>
-        </div>
-    </div>
-    <!-- Modal 3-->
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body modal-content-body">
-                    <!-- Project Details Go Here-->
-                    <h2 class="text-uppercase text-dark">banana&Avena</h2>
-                    <p class="item-intro text-muted">fuente de proteina | Sin adicion de azúcares</p>
-                    <img class="img-fluid d-block mx-auto modal__img" src="multimedia/inf.png" alt="Close modal" /></div>
-                    <button class="btn btn-primary modal__buttom" data-dismiss="modal" type="button" style="background-color: black;">
-                        <i class="fas fa-times mr-1"></i>
-                        cerrar
-                    </button>
-                </div>
+            
+
+
+            <!-------------CACAO&BANANA------------>
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class="container__inf portfolio-wrap portfolio-wrap--border">
+                <img src="multimedia\prod-cacao-banana3.jpeg" class="img-fluid" alt="waffle de cacao&banana">
+                <div class="overlay overlay-heigt">
+                  <div class="table-font">
+                    <header>  
+                      <h1 class="text-center bg-dark">cacao&Banana</h1>
+                      <p class="text-center a"><b>ingredientes: Agua,Avena,Huevo en polvo,Leche en polvo descremada <br> Stevia,Polvo para hornear,Extracto de vainilla</b></p>
+                      <p class="text-center">
+                        <b>condiciones de almacenamiento y uso: <br>En el freezer hasta 3 meses desde la fecha de elaboracion <br> En refrigerador, ver fecha de vencimiento</b>
+                      </p>
+                    </header>
+                      <table class="table-nutricional">
+
+                        <tbody>
+
+                          <tr>
+                            <th>
+                              valor energetico
+                            </th>
+                            <td>
+                              104,1Kcal
+                              &bull;437,1Kj
+                            </td>
+                            <td>5,2</td>
+                          </tr>
+
+
+                          <tr>
+                            <th>Carbohidratos</th>
+                            <td>15,6gr</td>
+                            <td>5,2</td>
+                          </tr>
+
+
+                          <tr>
+                            <th>proteinas</th>
+                            <td>5,4gr</td>
+                            <td>7,2</td>
+                          </tr>
+
+
+                          <tr>
+                            <th>Grasas totales</th>
+                            <td>2,2gr</td>
+                            <td>4,1</td>
+                          </tr>
+
+
+                          <tr>
+                            <th>grasas Saturadas</th>
+                            <td>0,2gr</td>
+                            <td>1</td>
+                          </tr>
+
+
+                          <tr>
+                            <th>grasas Trans</th>
+                            <td>0gr</td>
+                            <td>0</td>                          
+                          </tr>
+
+                          <tr>
+                            <th>fibra alimentaria</th>
+                            <td>2gr</td>
+                            <td>7,9</td>                          
+                          </tr>
+
+                          <tr>
+                            <th>sodio</th>
+                            <td>25,1mg</td>
+                            <td>1</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                
+                    
+                  </div>
+              </div>
+              </div>
             </div>
-        </div>
-    </div>
-    <!-- Modal 4-->
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body modal-content-body">
-                    <!-- Project Details Go Here-->
-                    <h2 class="text-uppercase text-dark">banana&Coco</h2>
-                    <p class="item-intro text-muted">fuente de proteina | Sin adicion de azúcares</p>
-                    <img class="img-fluid d-block mx-auto modal__img" src="multimedia/inf.png" alt="Close modal" /></div>
-                    <button class="btn btn-primary modal__buttom" data-dismiss="modal" type="button" style="background-color: black;">
-                        <i class="fas fa-times mr-1"></i>
-                        cerrar
-                    </button>
-                </div>
+  
+
+            <!----------------CACAO AMARGO------------>
+            <div class="col-lg-4 col-md-6 portfolio-item">
+              <div class=" container__inf portfolio-wrap portfolio-wrap--border">
+                <img src="multimedia\prod-cacao-banana3.jpeg" class="img-fluid" alt="waffle de cacao amargo">
+                <div class="overlay overlay-heigt">
+                  <div class="table-font">
+                    <header>  
+                      <h1 class="text-center bg-dark">cacao Amargo</h1>
+                      <p class="text-center a"><b>ingredientes: Agua,Avena,Huevo en polvo,Leche en polvo descremada <br> Stevia,Polvo para hornear,Extracto de vainilla</b></p>
+                      <p class="text-center">
+                        <b>condiciones de almacenamiento y uso: <br>En el freezer hasta 3 meses desde la fecha de elaboracion <br> En refrigerador, ver fecha de vencimiento</b>
+                      </p>
+                    </header>
+                      <table class="table-nutricional">
+
+                        <tbody>
+
+                          <tr>
+                            <th>
+                              valor energetico
+                            </th>
+                            <td>
+                              104Kcal
+                              &bull;436,7Kj
+                            </td>
+                            <td>5,2</td>
+                          </tr>
+
+
+                          <tr>
+                            <th>Carbohidratos</th>
+                            <td>15,8gr</td>
+                            <td>5,2</td>
+                          </tr>
+
+
+                          <tr>
+                            <th>proteinas</th>
+                            <td>5,4gr</td>
+                            <td>7,1</td>
+                          </tr>
+
+
+                          <tr>
+                            <th>Grasas totales</th>
+                            <td>2,1gr</td>
+                            <td>3,9</td>
+                          </tr>
+
+
+                          <tr>
+                            <th>grasas Saturadas</th>
+                            <td>0,2gr</td>
+                            <td>1,1</td>
+                          </tr>
+
+
+                          <tr>
+                            <th>grasas Trans</th>
+                            <td>0gr</td>
+                            <td>0</td>                          
+                          </tr>
+
+                          <tr>
+                            <th>fibra alimentaria</th>
+                            <td>2gr</td>
+                            <td>7,9</td>                          
+                          </tr>
+
+                          <tr>
+                            <th>sodio</th>
+                            <td>28,2mg</td>
+                            <td>1,2</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                
+                    
+                  </div>
+              </div>
+              </div>
             </div>
+  
+  
         </div>
-    </div>
-    <!-- Modal 5-->
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body modal-content-body">
-                    <!-- Project Details Go Here-->
-                    <h2 class="text-uppercase text-dark">banana&Cacao</h2>
-                    <p class="item-intro text-muted">fuente de proteina | Sin adicion de azúcares</p>
-                    <img class="img-fluid d-block mx-auto modal__img" src="multimedia/inf.png" alt="Close modal" /></div>
-                    <button class="btn btn-primary modal__buttom" data-dismiss="modal" type="button" style="background-color: black;">
-                        <i class="fas fa-times mr-1"></i>
-                        cerrar
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Modal 6-->
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body modal-content-body">
-                    <!-- Project Details Go Here-->
-                    <h2 class="text-uppercase text-dark">cacao Amargo</h2>
-                    <p class="item-intro text-muted">fuente de proteina | Sin adicion de azúcares</p>
-                    <img class="img-fluid d-block mx-auto modal__img" src="multimedia/inf.png" alt="Close modal" /></div>
-                    <button class="btn btn-primary modal__buttom" data-dismiss="modal" type="button" style="background-color: black;">
-                        <i class="fas fa-times mr-1"></i>
-                        cerrar
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
+      </section>
 
 
         <!-------------FOOTER-------------->
@@ -303,7 +625,7 @@
     </footer>
 
 
-    <!-- Bootstrap core JS-->
+    <!-------SCRIPT------->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
         
