@@ -23,63 +23,6 @@
   }
   
 
-  /*----------------------------------MEDIASQ------------------------------------------*/
-
-  @media screen and (max-width: 767px){
-    #about{
-        width: 100vw;
-        margin-top: 17vh;
-        margin-left: 0vw;
-        margin-bottom: 10vh;
-        margin-right: 0;
-      }
-    
-  
-    .about-img img{
-    display: none;   
-    }
-  }
-
-   
-    @media screen and (min-width: 768px) {
-      #about{
-        width: 83vw;
-        margin-left: 17vw;
-      }
-      .content{
-        padding-top: 0;
-      }
-
-      .about-img{
-        height: 35vh;
-      }
-      .about-img img{
-        margin-left: 50%;      
-      } 
-
-      .parrafo-uno{
-        margin-top: 0;
-      }
-
-      .title-about{
-        display: none;
-      }
-  
-    }
-
-    @media screen and (min-width: 1024px){
-      .about-img img{
-        margin-top: 10%;
-        margin-left: 0;      
-      }
-      
-      .content{
-        padding-top: 14%;
-      }
-    }
-
-    
-
   /*----------------ANIMACINOES----------------*/
 
   .parrafo-uno {
@@ -165,18 +108,61 @@
   }
 
 
-  .title-about{
-    animation: fade-der-arriba 1.6s ease both;
-  }
+
   
-  @keyframes fade-der-arriba {
-    from {
-      opacity: 0;
-      transform: translate3d(400% , 0 ,0);
-    }
-    to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
+
+
+  /*----------------------------------MEDIASQ------------------------------------------*/
+
+  @media screen and (max-width: 767px){
+    #about{
+        width: 100vw;
+        margin-top: 17vh;
+        margin-left: 0vw;
+        margin-bottom: 10vh;
+        margin-right: 0;
+      }
+    
+  
+    .about-img img{
+    display: none;   
     }
   }
+
+   
+    @media screen and (min-width: 768px) {
+      #about{
+        width: 83vw;
+        margin-left: 17vw;
+      }
+      .content{
+        padding-top: 0;
+      }
+
+      .about-img{
+        height: 35vh;
+      }
+      .about-img img{
+        margin-left: 50%;      
+      } 
+
+      .parrafo-uno{
+        margin-top: 0;
+      }
+
+      .title-about{
+        display: none;
+      }
   
+    }
+
+    @media screen and (min-width: 1024px){
+      .about-img img{
+        margin-top: 10%;
+        margin-left: 0;      
+      }
+      
+      .content{
+        padding-top: 14%;
+      }
+    }
