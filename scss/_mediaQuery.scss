@@ -1,0 +1,432 @@
+/*-------------------- MEDIA QUERY NAV------------------*/
+
+@media only screen and (max-width: 767px){
+    nav{
+      background-image: url(../multimedia/cuadro29.jpg);
+      background-size: cover;
+    }
+    .nav__list__item{
+        padding-left: 2%;
+    }
+    .nav__logo{
+        margin: 0;
+        padding: 0;
+    }
+    .nav__imgLogo{
+        width: auto;
+        height: 15vh;
+        margin: 0;
+        padding: 0;
+    }
+    .nav__botton{
+        padding-left: 0;
+    }
+}
+
+           
+@media only screen and (min-width: 768px){
+    #sideNav {
+        text-align: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        
+        .navbar-collapse {
+        display: flex;
+        align-items: flex-start;
+        flex-grow: 0;
+        margin-bottom: auto;
+        
+            .navbar-nav {
+            flex-direction: column;
+            width: 100%;  
+            
+
+                .nav__list__item{
+                font-size: 1.15rem; 
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (min-width: 1024px){
+    .nav__list__item__a{
+        font-size: 1.45rem;
+    }
+}
+
+/*-------------------------MEDIA QUERY MAIN-----------------------*/
+
+    
+@media only screen and (max-width: 767px) {
+    
+    #main {   
+      @include media-mobile;
+  
+        .main__izq {
+            height:75vh;
+            border-right: 0;
+        }
+                
+        .main__izq__titulo {
+            font-size: 2.3rem;   
+        }
+            
+        .main__izq__subtitulo {
+            font-size: 1.5rem;
+            width: 70%;
+        }
+
+        .main__der {
+            height: 120vh;
+        }  
+    }
+}
+  
+  
+@media only screen and (min-width: 768px) {
+    #main {   
+      @include min-768;
+
+      .main__izq {
+        background-size: 110%; 
+        }
+
+        .main__izq:hover {
+            background-size: 120%;
+        }
+                  
+        .main__izq__subtitulo {
+            font-size: 1.5rem;
+            width: 70%;
+        }
+
+        @each $der in arriba, centro, abajo {
+            .main__der__#{$der} { 
+                background-size: 110%;
+            }
+
+            .main__der__#{$der}:hover {
+            background-size: 120%;
+            }
+        }
+    }
+}
+
+
+  /*------------------------------MEDIA QUERY SABORES---------------------------*/
+@media only screen and (max-width: 767px){
+    .producto{
+        @include media-mobile ;
+    }
+    .producto__titulo{
+        font-size: 2.2rem; 
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .producto{
+        margin-left: 17vw;
+        width: 80vw;
+}
+
+    .producto__titulo{
+        font-size: 2.4rem;
+        padding-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .table-font{  
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .table-font{  
+        font-size: .6rem;
+    }
+}
+
+@media only screen and (min-width: 1300px){
+    .table-font{  
+        font-size: .9rem;
+    }
+}
+  
+/*---------------------------MEDIA QUERY PREPARACION---------------------*/
+
+@media only screen and (max-width: 767px){
+
+    #preparacion{
+    @include media-mobile
+    }
+
+    .list-preparacion{
+        width: 100vw;
+    }
+
+    .list-preparacion h4{
+        font-size: .9rem;
+    }
+
+    .preparacion-title{
+        font-size: 1.25rem;
+    }
+     
+    #desayunos img {
+        height: 19vh;
+        margin: 0;
+    }
+      
+    #desayunos figure {
+        @include col-nw-cen;
+        height: 24vh;
+        padding: .2rem;
+        margin: .5rem;
+    }
+    .desayunos-2 {
+        -webkit-transform : rotate(4deg);
+    }
+
+    .desayunos-3 {
+        -webkit-transform : rotate(-5deg);
+    }
+
+    .desayunos-5 {
+        -webkit-transform : rotate(-3deg);
+    }
+}
+
+@media only screen and (min-width: 768px){
+    #preparacion{
+        @include min-768
+    }
+        .preparacion-title{
+            font-size: 1.5rem;
+            margin-top: 1.5rem;
+        }
+    
+        .list-preparacion{
+            margin-top: 1.3rem;
+            margin-bottom: 1.3rem;
+            width: 50vw;
+        }
+    
+        .list-preparacion h4{
+            font-size: 1rem;
+        }
+         
+        #desayunos img {
+            height: 22vh;
+        }
+          
+        #desayunos figure {
+            @include col-nw-cen;
+            height: 27vh;
+            padding: .2rem;
+            margin: .7rem;
+        }
+       
+        .desayunos-3 {
+            -webkit-transform : rotate(-3deg);
+        }
+}
+
+@media only screen and (min-width: 1024px){
+    .preparacion-title{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .list-preparacion h4{
+        font-size: 1.3rem;
+    }
+    #desayunos img {
+        height: 30vh;
+    }
+    
+    #desayunos figure {
+        height: 35vh;
+        margin: .9rem;
+    }
+
+    .desayunos-5 {
+        -webkit-transform : rotate(8deg);
+    }
+}
+
+
+@media only screen and (min-width: 1440px){
+    .preparacion-title{
+        font-size: 2.7rem;
+    }
+
+    .list-preparacion h4{
+        font-size: 1.5rem;
+    }
+
+}
+
+ /*------------------MEDIA QUERY CONOCENOS------------------*/
+
+ @media only screen and (max-width: 767px) {
+   .about-container{
+     @include media-mobile;
+      padding-top: .4rem;
+      font-size: .96rem;
+      height: 72vh;
+      display:grid;
+      grid-template-areas: 
+      "pUno img";
+      grid-template-columns: 70vw 30vw;
+      background-image: url(../multimedia/conocenos11.jpg);
+      background-size: cover;
+   }
+
+   .about-container:before {
+    content:'';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .parrafo-uno{
+    margin: .4rem;
+    font-size: .95rem;
+  }
+
+}
+
+@media only screen and (min-width: 768px){
+  .about-container{
+    @include min-768;
+     padding-top:0;
+     border-left: 7px solid $color-border;
+     height: 100vh;
+     display:grid;
+     grid-template-areas: 
+     "img pUno";
+     grid-template-columns: 20vw 62vw;
+     background-image: url(../multimedia/conocenos-4.jpg);
+     background-size: cover;
+}
+
+  .about-container:before {
+   content:'';
+   position: absolute;
+    top: 0;
+   bottom: 0;
+   left: 17vw;
+   right: 0;
+   background-color: rgba(0,0,0,0.7);
+ }
+ .parrafo-uno{
+   width: 100%;
+   margin: .4rem;
+   font-size: 1rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   letter-spacing: 1px;
+ }
+
+ .about-img{
+   display: flex;
+   flex-direction: column;
+   align-self: flex-start;
+   align-items: flex-start;
+   margin: .5rem;
+ }
+ .about-img img{
+   width: 15vw;
+   height: auto;
+ }
+}
+
+@media only screen and (min-width: 1024px){
+  .parrafo-uno {
+    width: 95%;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 1300px){
+  .parrafo-uno{
+    font-size: 1.3rem;
+  }
+}
+/*-------------------------MEDIA QUERY CONTACTO---------------------*/
+
+  @media only screen and (max-width: 767px){
+    #contacto{
+        @include media-mobile;
+        @include back-size-rep-posit;
+        border-left: 0;
+    }
+
+    #contacto:hover{
+        filter:grayscale(35%);
+    }
+
+    .formulario{
+        width: 80%;
+    }
+
+    .formulario__boton{
+        align-items: center;    
+    }
+}
+
+@media only screen and (min-width: 768px){
+    #contacto{
+        @include min-768;
+    }
+    form ::first-line{
+        color: rgba(230, 230, 197, 0.582); 
+    }
+    
+    #contacto:hover form ::first-line{
+        color:$color-font;
+    }
+}
+
+/*-------------------------MEDIA QUERY FOOTER--------------------------*/
+
+@media only screen and (max-width: 767px){
+    footer{
+        background-image: url(../multimedia/cuadro29.jpg);
+        background-size: cover;
+        height: 9vh;        
+        }
+        .footer__copyr{
+            font-size: .5rem;
+        }
+}
+
+@media only screen and (min-width: 768px)and(max-width: 1023px) {
+        .footer__copyr{
+            font-size: .38rem;
+        }
+}
+
+@media only screen and (min-width: 1024px){
+    .footer__copyr{
+        font-size: .5rem;
+    }
+}
+
+@media only screen and (min-width: 1300px){
+        .footer__copyr{
+            font-size: .6rem;
+        }
+}

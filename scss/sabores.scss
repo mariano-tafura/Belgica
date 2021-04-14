@@ -1,44 +1,39 @@
-/*---------------PORTFOLIO--------------*/
+/*------------------------------------SABORES----------------------------------------*/
 
-.portfolio__titulo{
-  color: rgba(240, 240, 214, 0.904);
-  font-size: 2rem;
-  padding-top: 2rem;
-  margin-bottom: 1rem;
+.producto__titulo{
   text-transform: uppercase;
   text-align: center;
   position: relative;
-  text-shadow: 2px 2px 0 rgb(114, 113, 113);
+  text-shadow: 2px 2px 0 rgb(0, 0, 0);
 }
 
-
-.portfolio-item {
+.producto-item {
   margin-bottom: 30px;
 
-
-  .portfolio-wrap {
+  .producto-wrap {
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
+    filter: grayscale(20%);
     transition: 0.3s;
     position: relative;
     overflow: hidden;
   }
   
-    .portfolio-wrap img {
+    .producto-wrap img {
+      transform: scale(1.1);
       transition: 0.3s;
     }
   
   
-    .portfolio-wrap:hover {
+    .producto-wrap:hover {
       box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
     }
   
-    .portfolio-wrap:hover img {
-      transform: scale(1.1);
+    .producto-wrap:hover img {
+      transform: scale(1);
     }
-  
 
-    .portfolio-wrap--border{
-        border: 5px solid rgba(240, 240, 214, 0.904);
+    .producto-wrap--border{
+        border: 7px solid $color-border;
     }
 }
 
@@ -52,11 +47,10 @@
   .overlay {
     position: absolute;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(29, 28, 28, 0.644); 
     width: 100%;
     transition: .5s ease;
     opacity:0;
-    color: rgba(240, 240, 214, 0.904);
     text-align: center;
   }
 
@@ -65,9 +59,8 @@
     padding: 10px;
   }
 
-
     .table-font{  
-    font-size: 11px;
+    font-size: .9rem;
     text-align: left;
     }
 
@@ -81,29 +74,8 @@
         border-top: 1px solid;
       }
 
-
-
-
-/*-------------------MEDIAS Q-----------------*/
-
-@media screen and (min-width: 768px) {
-
-  .portfolio{
-    width: 82vw;
-    margin-left: 16vw;
-  }
-  }
-  
-  @media screen and (max-width: 767px){
-  .portfolio{
-   margin-top:12vh ;
-    }
-  
-  }
-
-
-  /*---------------ANIMACIONES-----------*/
-.portfolio {
+  /*--------------------------KEYFRAMES SABORES-----------------------*/
+.producto {
   animation: fade 1s ease-in both;
 }
 

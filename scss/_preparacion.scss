@@ -1,361 +1,120 @@
+/*---------------------------------PREPARACION--------------------------------------*/
 #preparacion{
-  margin-right: 0;
-  padding-right: 0;
-  text-transform: none; 
   text-align: center;
-  text-align: -webkit-center;
+  background-size: cover;
+  background-position: top;
+}
+
+.list-preparacion{
+  @include col-nw-cen;
+  width: 45%;
+  align-items: flex-start;
+  list-style: circle;
+  box-shadow: 3px 4px 4px black;
+
+}
+
+.preparacion-title{
+  font-size: 2rem;
+  padding: 1rem;
+  border-top: 1px solid $color-font;
+  border-bottom: 1px solid $color-font;
+}
+
+#desayunos{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 
+#desayunos figure {
+  box-shadow: 1px 6px 5px black;
+}
 
-.timeline {
-    position: relative;
-    padding: 0;
-    list-style: none;
-  }
-  .timeline:before {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 40px;
-    width: 2px;
-    margin-left: -1.5px;
-    content: "";
-    background-color: #e9ecef;
-  }
-  .timeline li {
-    position: relative;
-    min-height: 50px;
-    margin-bottom: 50px;
-  }
-  
-  .timeline > li .timeline-panel {
-    position: relative;
-    float: right;
-    width: 100%;
-    padding: 0 20px 0 100px;
-    text-align: left;
-  }
+#desayunos figure:hover {
+  box-shadow: 5px 10px 100px black;
+  -webkit-transform: scale(1.1,1.1);
+  transition: .2s;
+  z-index: 20;
+}
 
-  .timeline > li .timeline-image {
-    position: absolute;
-    z-index: 100;
-    left: 0;
-    width: 80px;
-    height: 80px;
-    margin-left: 0;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-    border: 3px solid #e9ecef;
-    border-radius: 100%;
-    background-color: white;
-    color: black;
-  }
-  
+.desayunos-1 {
+  -webkit-transform : rotate(-6deg);
+  z-index: 1;
+}
 
-  
-  .timeline-title{
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-    margin: 2rem; 
-    padding: 2rem;
-    }
+.desayunos-2 {
+  -webkit-transform : rotate(12deg);
+  z-index: 2;
+}
 
-
-
-    .timeline-panel-text{
-      margin-top: 3vh;
-      flex-direction: column;
-      height: 13vh;
-      padding-top: 5vh;
-    }
-
-
-  .timeline-image-uno{
-    background-image: url(../multimedia/1-freezer.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-   
+.desayunos-3 {
+  -webkit-transform : rotate(-25deg);
+  z-index: 1;
 }
 
 
-.timeline-image-dos{
-    background-image: url(../multimedia/tostadora-4.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    
+.desayunos-4 {
+  -webkit-transform : rotate(2deg);
+  z-index:1;
+}
+
+.desayunos-6 {
+  -webkit-transform : rotate(-13deg);
+  z-index:1;
+}
+
+.desayunos-7 {
+  -webkit-transform : rotate(-7deg);
+  z-index:1;
+}
+
+.desayunos-8 {
+  -webkit-transform : rotate(2deg);
+  z-index:1;
 }
 
 
-.timeline-image-tres{
-    background-image: url(../multimedia/waffle-solo2.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    
+/*----------------------KEYFRAME PREPARACION-------------------*/
+
+.preparacion-title {
+  animation: title-preparacion 5s infinite;
+}
+
+@keyframes title-preparacion {
+    0% {opacity:0;width:90%;}
+    20% {opacity:1;width:90%;}
+    30% {width:90%;}
+    80% {opacity:1;}
+    100% {opacity:0;width:90%;}
+}
+
+.list-preparacion {
+  animation: list-preparacion 1.3s ease-out ;
+}
+
+@keyframes list-preparacion {
+  from {
+    transform: translate3d(200% , 0, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
 
-.timeline-image-cuatro{
-    background-color: #e9ecef;
-    color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  
+#desayunos {
+  animation: desayunos 1.3s ease-out;
 }
 
-
-
-.carousel-item img{
-  height: 80vh;
-  width: auto;
+@keyframes desayunos {
+  from {
+    transform: translate3d(0 , 200%, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+  }
 }
 
-
-
-
-  /*---------------------------------ANIMACIONES-----------------------------------*/
-  .timeline-animation-uno {
-    animation: fadeLeft 1s ease-in both;
-    
-  }
-
-  @keyframes fadeLeft {
-    from {
-      opacity: 0;
-      transform: translate3d(-25%, 0, 0);
-    }
-    to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
-  }
-
-  .timeline-animation-dos {
-    animation: fadeRigth 1s ease-in both;
-    animation-delay: .4s;
-  }
-
-  @keyframes fadeRigth {
-    from {
-      opacity: 0;
-      transform: translate3d(25%, 0, 0);
-    }
-    to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
-  }
-
-  .timeline-animation-tres{
-    animation: fadeLeft 1s ease-in both;
-    animation-delay: .6s;
-  }
-
-  @keyframes fadeLeft {
-    from {
-      opacity: 0;
-      transform: translate3d(-25%, 0, 0);
-    }
-    to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
-  }
-
-    .timeline:before {
-      animation: fade-line 1s ease-in both;
-      animation-delay: .4s;
-    }
-
-    @keyframes fade-line {
-      from {
-        opacity: 0;
-        transform: translate3d(0, -65%, 0);
-      }
-      to {
-        opacity: 1;
-        transform: translate3d(0, 0, 0);
-      }
-    }
-
- 
-
-
-  .timeline-title {
-    overflow:hidden;
-    white-space:wrap;
-  }
-  
-  .timeline-title:last-of-type {
-    animation: reveal 7s infinite;
-  }
-  
-  
-  @keyframes reveal {
-      0% {opacity:0;width:90%;}
-      20% {opacity:1;width:90%;}
-      30% {width:90%;}
-      80% {opacity:1;}
-      100% {opacity:0;width:90%;}
-  }
-  
-
-
-
-
-  h4 span { display:inline-block; animation:float .6s linear; animation-duration: 1.3s; }
- @keyframes float {
-  0%,100%{ transform:none; }
-  33%{ transform:translateY(-1px) rotate(-1deg); }
-  66%{ transform:translateY(1px) rotate(1deg); }
-}
-.timeline-panel:hover span { animation:bounce .3s; }
-@keyframes bounce {
-  50%{ transform:translateY(-20px) rotate(1deg) scale(1.1);  }
-}
-
-
-
-
-  /*--------------------------------MEDIASQ--------------------------------------------*/
-
-  @media only screen and (max-width: 767px){
-    #preparacion{
-      margin-top: 17vh  ;
-      padding-left: 6px;
-    }
-    
-    .timeline{
-      height: 48vh;
-      margin-bottom: 20%;
-    }
-
-    .timeline > li .timeline-image h4 {
-      font-size: 13px;
-    }
-
-    .carousel-item img{
-      height: 50vh;
-    }
-  }
-
-
-  @media (min-width: 768px) {
-
-    #preparacion{
-      margin-top:0;
-      width: 82vw;
-      margin-left: 16vw;
-    }
-    .carousel-item img{
-      height: 80vh;
-      width: auto;
-      padding-bottom: 20px;
-    }
-    
-
-    .timeline{
-      height: 70vh;
-      margin-bottom: 10%;
-    }
-
-    .timeline:before {
-      left: 50%;
-    }
-    .timeline > li {
-      min-height: 100px;
-    }
-    .timeline > li .timeline-panel {
-      float: left;
-      width: 40%;
-      text-align: center;
-      margin-top: 5vh;
-      padding: 0;
-      height: 13vh;
-    }
-    .timeline > li .timeline-image {
-      left: 50%;
-      width: 100px;
-      height: 100px;
-      margin-left: -50px;
-    }
-    .timeline > li .timeline-image h4 {
-      font-size: 15px;
-      
-    }
-    .timeline > li.timeline-inverted > .timeline-panel {
-      float: right;
-      padding: 0 30px 20px 20px;
-      text-align: left;
-    }
-  }
- 
-
-
-  @media (min-width: 1024px) {
-
-    .timeline{
-      height: 80vh;
-      margin-bottom: 10%;
-    }
-
-    .timeline > li {
-      min-height: 170px;
-    }
-    .timeline > li .timeline-panel {
-      float: left;
-      width: 40%;
-      text-align: center;
-      padding-left: 7%;
-      margin-top: 8vh;
-      height: 15vh;
-    }
-
-    .timeline > li .timeline-image {
-      width: 170px;
-      height: 170px;
-      margin-left: -85px;
-    }
-
-    .timeline > li .timeline-image h4 {
-      font-size: 22px;
-    }
-
-  }
-
-
-  @media (min-width: 1300px){
-
-    .timeline{
-      height: 93vh;
-      margin-bottom: 60px;
-    }
-
-    .timeline > li .timeline-panel {
-      float: left;
-      width: 40%;
-      text-align: center;
-      padding-left: 14%;
-      margin-top: 8vh;
-      height: 15vh;
-    }
-
-    .timeline > li .timeline-image {
-      width: 180px;
-      height: 180px;
-      margin-left: -90px;
-    }
-
-    .timeline > li .timeline-image h4 {
-      font-size: 28px;
-    }
-
-  }
-
+/*------------------------------------------------------------------------------------*/

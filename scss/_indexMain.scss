@@ -1,100 +1,85 @@
 
-
+/*----------------------------------MAIN---------------------------------------------*/
 #main  {
     height: 100vh;
-    margin-right: 0;
-    padding-right: 0;
     text-transform: none; 
-    
-  
-        .main__izq {
-            background-image: url(../multimedia/izq.jpg);
-            display: flex;
-            flex-flow: column nowrap;
-            justify-content: space-around;
-            background-size: 155%;
-            transition: all .7s;
-            background-repeat: no-repeat;
-            background-position: center;
-            filter: grayscale(100%); 
-        }
-  
-        .main__izq:hover {
-            transition: all 1s;
-            background-size: 170%;
-            filter: none; 
-        }
-            
-        .main__izq__titulo {
-            font-size: 2.3rem;
-            margin-top: 1rem;
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            text-align: center;
-            position: relative;
-            text-shadow: 2px 2px 0 #000; 
-        }
 
-        a{
-            color: black;
-        }
-
-        a:hover{
-            color: black;
-        }
-            
-            
-        .main__izq__subtitulo {
-            font-size: 1.5rem;
-            width: 50%;
-            color: white;
-            align-self: center;
-            text-align: center; 
-        }
-
-
-        .main__der {
-            text-align: center;
-            text-transform: uppercase; 
-        }
-        
-        .main__der__titulo {
-            font-size: 2rem;
-            font-weight: bold; 
-        }
-
-        a {
-            color: black;
-        }
-  
-
-/*----------EACH------------*/
-
-@each $der in arriba, centro, abajo {
-    .main__der__#{$der} { 
+      .main__izq {
+          background-image: url(../multimedia/gofre-3.jpg);
           display: flex;
-          justify-content: center;
-          align-items: center;
-          background-image:url("../multimedia/#{$der}.jpg");
-          background-size: 125%;
+          flex-flow: column nowrap;
+          justify-content: space-around;
+          background-size: 100%;
           transition: all .7s;
           background-repeat: no-repeat;
           background-position: center;
-          filter: grayscale(100%);
-    }
+          filter: grayscale(70%); 
+          border-left: .4rem solid $color-border;
+          border-right: .4rem solid $color-border;
+          border-bottom: .4rem solid $color-border;
+      }
+
+      .main__izq:hover {
+          transition: all 1s;
+          background-size: 110%;
+          filter: grayscale(20%); 
+      }
+          
+      .main__izq__titulo {
+          text-transform: uppercase;
+          text-align: center;
+          position: relative;
+          text-shadow: 2px 2px 0 #000; 
+      }
+  
+      .main__izq__subtitulo {
+          text-shadow: 2px 2px 0 #000; 
+          font-weight: 400;
+          align-self: center;
+          text-align: center; 
+      }
+
+      .main__der {
+          text-align: center;
+          text-transform: uppercase; 
+      }
+      
+      .main__der__titulo {
+          font-size: 2rem;
+      }
+
+      a {
+          color: $color-font;
+          text-shadow: 3px 3px 0 #000; 
+      }
+  
+
+@each $der in arriba, centro, abajo {
+    .main__der__#{$der} { 
+          @include col-nw-cen;
+          align-items: center;
+          background-image:url("../multimedia/#{$der}.jpg");
+          background-size: 100%;
+          transition: all .7s;
+          background-repeat: no-repeat;
+          background-position: center;
+          filter: grayscale(70%);
+          border-bottom: .4rem solid $color-border;
+          border-right: .4rem solid $color-border;
+
+        }
     
 
   .main__der__#{$der}:hover {
       transition: all 1s;
-      background-size: 140%;
-      filter: none; 
+      background-size: 110%;
+      filter: grayscale(20%); 
   }
   }
 }
     
 
-/*---------------ANIMACIONES-------------------*/
-
+/*------------------------KEYFRAMES MAIN--------------------*/
 
 .main__izq {
     animation: fade-main-izq 1s ease-in both;
@@ -159,102 +144,4 @@
     }
   }
 
-
-
-
-  /*-------------------MEDIAS Q-----------------*/
-
-@media screen and (max-width: 767px) {
-    
-  #main {   
-      width: 100vw;
-      margin-left: 0vw;
-      margin-top: 20vh;
-      margin-bottom: 10vh;
-      margin-right: 0;
-      
-
-
-      .main__izq {
-          height:73vh;
-          background-image: url(../multimedia/izq.jpg);
-          display: flex;
-          flex-flow: column nowrap;
-          justify-content: space-around;
-          background-size: 150%;
-          transition: all .7s;
-          background-repeat: no-repeat;
-          background-position: center;
-          filter: grayscale(100%); 
-      }
-  
-
-      .main__izq:hover {
-          transition: all 1s;
-          background-size: 160%;
-          filter: none; 
-      }
-              
-      .main__izq__titulo {
-          display: flex;
-          justify-content: center;
-          font-size: 2rem;
-          margin-top: 1rem;
-          margin-bottom: 1rem;
-          text-transform: uppercase;
-          text-align: center;
-          position: relative;
-          text-shadow: 2px 2px 0 #000; 
-      }
-
-      a{
-          color: black;
-      }
-
-      a:hover{
-          color: black;
-      }
-              
-              
-      .main__izq__subtitulo {
-          font-size: 1rem;
-          width: 50%;
-          color: white;
-          display: flex;
-          
-          align-self: center;
-          text-align: center; 
-      }
-
-
-      .main__der {
-          height: 120vh;
-          text-align: center;
-          text-transform: uppercase; 
-      }
-
-     
-      .main__der__titulo {
-          font-size: 2rem;
-          font-weight: bold; 
-      }
-
-      a {
-          color: black;
-      }
-      
-  }
-
-
-}
-
-
-
-@media only screen and (min-width: 768px) {
-  #main {   
-  width: 83vw;
-  margin-left: 17vw;
-  }
-  
-}
-
+/*-----------------------------------------------------------------------------------*/

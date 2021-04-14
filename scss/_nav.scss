@@ -1,4 +1,4 @@
-
+/*---------------------------------NAV-----------------------------------------*/
 
 .nav__logo{
     text-align: center
@@ -9,137 +9,34 @@
     height: 20vh;
 }
 
-
 .nav__list{
     list-style: none;
     padding: 0;
     text-align: left;
 
-
-
     .nav__list__item{
     font-size: 1.2rem;
     padding-top: 3%;
     padding-bottom: 3%;
-        
-    }
 
         .nav__list__item__a{
-        color:rgb(230, 230, 197) ;
+        color:$color-font;
         text-decoration: none;
-        background-image: linear-gradient(rgb(230, 230, 197),rgb(230, 230, 197));
+        background-image: linear-gradient($color-font,$color-font);
         background-position: 0% 100%;
         background-repeat: no-repeat;
         background-size: 0% 5%;
         transition: background-size .3s;    
 
         }
-    
-
         .nav__list__item__a:hover{
         background-size: 100% 5%;
-        color: rgb(230, 230, 197);
+        color: $color-font;
         }
     }
-
-
-/*---------------MEDIASQ----------------*/
-
-
-@media (max-width: 767px){
-    nav{
-        background-color: black;
-    }
-
-    .nav__list__item{
-        padding-left: 2%;
-    }
-
-    .nav__imgLogo{
-        width: auto;
-        height: 15vh;
-        margin: 0;
-        padding: 0;
-    }
-
-    .nav__logo{
-        margin: 0;
-        padding: 0;
-    }
-
-    .nav__botton{
-        padding-left: 0;
-    }
-
 }
 
-           
-@media (min-width: 768px) and (max-width: 1023px) {
-    #sideNav {
-    
-        text-align: center;
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-        
-    
+/*---------------------------------------------------------------------------------*/
 
-        .navbar-collapse {
-        display: flex;
-        align-items: flex-start;
-        flex-grow: 0;
-        margin-bottom: auto;
-        
-            .navbar-nav {
-            flex-direction: column;
-            width: 100%;
-                
-            }
-
-                .nav__list__item{
-                font-size: 1.3rem;
-                    
-                }
-        }
-    }
-    
-}
-
-    @media (min-width: 1024px){
-        #sideNav {
-    
-            text-align: center;
-            position: fixed;
-            top: 0;
-            left: 0;
-            display: flex;
-            flex-direction: column;
-            height: 100vh;
-            
-        
-    
-            .navbar-collapse {
-            display: flex;
-            align-items: flex-start;
-            flex-grow: 0;
-            margin-bottom: auto;
-            
-                .navbar-nav {
-                    flex-direction: column;
-                    width: 100%;
-                    
-                    }
-    
-                    .nav__list__item{
-                        font-size: 1.6rem;
-                        
-                    }
-                }
-            }
-        
-    }
 
 

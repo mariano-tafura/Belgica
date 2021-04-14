@@ -1,168 +1,62 @@
-#about{
-  margin-right: 0;
-  padding-right: 0;
+/*------------------------------CONOCENOS---------------------------------------*/
+.about-img{
+  grid-area: img;
 }
 
-  #about p{
-    font-size: 1.1rem;
-  }
+.about-img img{
+  width: 25vw;
+  height: auto;
+  transition: .5s;
+}
 
-  .parrafo-uno{
-    margin-top: 12%;
-  }
+.about-img img:hover {
+  transform: scale(1.04);
+}
 
-    
-  .about-img img {
+.parrafo-uno{
+  grid-area: pUno;
+}
 
-    transition: .5s;
+.about-container{
+  height: 100vh;
+  display:grid;
+  grid-template-areas: 
+  "pUno img";
+  grid-template-columns: 50vw 50vw;
+}
 
-  }
+/*-------------------------KEYFRAMES CONOCENOS------------------*/
 
-  .about-img img:hover {
-      transform: scale(1.06);
-  }
+.parrafo-uno {
+  animation: fade-der-arriba-uno 1s ease both;
   
+}
 
-  /*----------------ANIMACINOES----------------*/
-
-  .parrafo-uno {
-    animation: fade-der-arriba-uno 1s ease both;
-    
+@keyframes fade-der-arriba-uno {
+  from {
+    opacity: 0;
+    transform: translate3d(0 , -80% ,0);
   }
-  
-  @keyframes fade-der-arriba-uno {
-    from {
-      opacity: 0;
-      transform: translate3d(0 , -80% ,0);
-    }
-    to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
+}
 
-  .parrafo-dos {
-    animation: fade-der-arriba-dos 1s ease both;
-    animation-delay: .6s;
+.about-img{
+  animation: fade-img 1.4s ease-in-out both;
+  animation-delay: .1s;
+}
+
+@keyframes fade-img {
+  from {
+    opacity: 0;
+    transform: translate3d(0 , 300% ,0);
   }
-  
-  @keyframes fade-der-arriba-dos {
-    from {
-      opacity: 0;
-      transform: translate3d(0 , -130% ,0);
-    }
-    to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
   }
-
-  .parrafo-tres {
-    animation: fade-der-arriba-tres 1s ease both;
-    animation-delay: .9s;
-  }
-  
-  @keyframes fade-der-arriba-tres {
-    from {
-      opacity: 0;
-      transform: translate3d(0 , -170% ,0);
-    }
-    to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
-  }
-
-  .parrafo-cuatro {
-    animation: fade-der-arriba-cuatro 1s ease both;
-    animation-delay: 1.2s
-  }
-  
-  @keyframes fade-der-arriba-cuatro {
-    from {
-      opacity: 0;
-      transform: translate3d(0 , -200% ,0);
-    }
-    to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
-  }
+}
 
 
-
-  .about-img{
-    animation: fade-img 1.4s ease-in-out both;
-    animation-delay: .1s;
-  }
-  
-  @keyframes fade-img {
-    from {
-      opacity: 0;
-      transform: translate3d(0 , 300% ,0);
-    }
-    to {
-      opacity: 1;
-      transform: translate3d(0, 0, 0);
-    }
-  }
-
-
-
-  
-
-
-  /*----------------------------------MEDIASQ------------------------------------------*/
-
-  @media screen and (max-width: 767px){
-    #about{
-        width: 100vw;
-        margin-top: 17vh;
-        margin-left: 0vw;
-        margin-bottom: 10vh;
-        margin-right: 0;
-      }
-    
-  
-    .about-img img{
-    display: none;   
-    }
-  }
-
-   
-    @media screen and (min-width: 768px) {
-      #about{
-        width: 83vw;
-        margin-left: 17vw;
-      }
-      .content{
-        padding-top: 0;
-      }
-
-      .about-img{
-        height: 35vh;
-      }
-      .about-img img{
-        margin-left: 50%;      
-      } 
-
-      .parrafo-uno{
-        margin-top: 0;
-      }
-
-      .title-about{
-        display: none;
-      }
-  
-    }
-
-    @media screen and (min-width: 1024px){
-      .about-img img{
-        margin-top: 10%;
-        margin-left: 0;      
-      }
-      
-      .content{
-        padding-top: 14%;
-      }
-    }

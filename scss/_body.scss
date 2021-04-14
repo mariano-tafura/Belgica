@@ -8,11 +8,14 @@
 body{
     font-family: 'Economica', sans-serif;
     font-size: 15px;
-    color:  rgba(240, 240, 214, 0.904);
-    background-color: black;
+    background-image: url(../multimedia/cuadro29.jpg);
+    background-size: contain;
+    color: $color-font;
     
 }
 
 :first-letter {
     text-transform: uppercase;
 }
+
+/*----------------------------------------------------------------------------------*/

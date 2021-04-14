@@ -1,0 +1,37 @@
+/*Variables*/
+
+$color-font : rgb(230, 230, 197);
+$color-border: rgb(29, 28, 28);
+
+/*Mixin*/
+
+@mixin col-nw-cen{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+@mixin back-size-rep-posit {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;   
+}
+
+@mixin media-mobile{
+    width: 100vw;
+    margin-left: 0vw;
+    margin-top: 18vh;
+    margin-bottom: 10vh;
+    margin-right: 0;
+}
+
+@mixin min-768{
+    width: 83vw;
+    margin-left: 17vw;
+}
+
+@mixin m-p-rigth{
+    margin-right: 0;
+    padding-right: 0;
+}
+
